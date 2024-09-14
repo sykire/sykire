@@ -1,3 +1,8 @@
+[project]
+name = "sykire"
+version = "0.0.2"
+description = "A Python Polylith repo"
+
 [tool.poetry]
 name = "sykire"
 version = "0.1.0"
