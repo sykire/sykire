@@ -23,7 +23,8 @@ repos:
         language: system
         types: [python]
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v1.17.0
+    rev: v3.29.0
     hooks:
       - id: commitizen
-        stages: [commit-msg]
+      - id: commitizen-branch
+        stages: [push]

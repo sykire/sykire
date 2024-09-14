@@ -1,11 +1,6 @@
-[project]
-name = "sykire"
-version = "0.0.2"
-description = "A Python Polylith repo"
-
 [tool.poetry]
 name = "sykire"
-version = "0.1.0"
+version = "0.0.2"
 description = ""
 authors = ["Rodrigo Carranza (sykire)"]
 license = "MIT"
@@ -36,4 +31,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.commitizen]
-version_provider = "pep621"
+version_provider = "poetry"
