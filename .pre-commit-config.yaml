@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v4.6.0"
+    hooks:
+      - id: check-merge-conflict
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: debug-statements
+      - id: forbid-submodules
+      - id: check-toml
+      - id: no-commit-to-branch
+        args: [--branch, main]
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: formatting::ruff
+        entry: poetry run ruff format
+        language: system
+        types: [python]
+      - id: ruff
+        name: linting-format::ruff
+        entry: poetry run ruff check
+        language: system
+        types: [python]
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v1.17.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]

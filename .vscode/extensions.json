@@ -1,8 +1,7 @@
 {
-    "recommendations": [
-        "tamasfe.even-better-toml",
-        "ms-python.python",
-        "mikestead.dotenv",
-        "tldraw-org.tldraw-vscode"
-    ]
+  "recommendations": [
+    "tamasfe.even-better-toml",
+    "ms-python.python",
+    "mikestead.dotenv"
+  ]
 }

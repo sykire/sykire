@@ -8,14 +8,14 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13.0"
+typer = "^0.12.5"
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.4.2"
-isort = "^5.13.2"
-mypy = "^1.10.0"
-flake8 = "^7.0.0"
 pytest = "^8.2.2"
+pyright = "^1.1.380"
+ruff = "^0.6.4"
+bandit = "^1.7.9"
 
 [tool.isort]
 profile = "black"
@@ -29,3 +29,6 @@ addopts = "-vv"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.commitizen]
+version_provider = "pep621"
