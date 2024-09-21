@@ -339,6 +339,7 @@ dev = [
     { name = "nox", extra = ["uv"] },
     { name = "polylith-cli" },
     { name = "pyright" },
+    { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
 ]
@@ -358,6 +359,7 @@ dev = [
     { name = "nox", extras = ["uv"], specifier = ">=2024.4.15" },
     { name = "polylith-cli", specifier = ">=1.17.0" },
     { name = "pyright", specifier = ">=1.1.381" },
+    { name = "pytest", specifier = ">=8.3.3" },
     { name = "pytest-cov", specifier = ">=5.0.0" },
     { name = "ruff", specifier = ">=0.6.6" },
 ]

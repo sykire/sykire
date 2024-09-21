@@ -7,4 +7,4 @@ def do_something():
 
 
 def hey():
-    print("hey")
+    print("hey 2")

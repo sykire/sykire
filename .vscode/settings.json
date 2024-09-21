@@ -9,5 +9,7 @@
   "[toml]": {
     "editor.formatOnSave": true
   },
-  "python.analysis.extraPaths": ["bases", "components"]
+  "python.analysis.extraPaths": ["bases", "components"],
+  "python.analysis.enablePytestSupport": true,
+  "python.testing.pytestEnabled": true
 }

@@ -52,5 +52,12 @@ def full_test(session: nox.Session):
 
 @nox.session(default=False)
 def diff_test(session: nox.Session):
-    session.install("polylith-cli")
-    session.run("poly", "diff", "--since", "release", "--short")
+    session.install("polylith-cli", "pytest", "coverage", "pytest-cov", ".")
+    result = session.run("poly", "diff", "--since", "release", "--short", "--bricks", silent=True)
+
+    if not isinstance(result, str):
+        session.error("Failed to run poly diff")
+
+    changed_bricks = result.strip().split(",")
+
+    session.run("pytest", "-k", " or ".join(changed_bricks), "test/")
