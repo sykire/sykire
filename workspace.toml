@@ -7,7 +7,7 @@ theme = "loose"
 
 [tool.polylith.tag.patterns]
 stable = "stable-*"
-release = "v[0-9]*"
+release = "[0-9]*"
 
 [tool.polylith.resources]
 brick_docs_enabled = false

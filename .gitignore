@@ -9,3 +9,8 @@ node_modules
 
 dist
 .ruff_cache
+
+htmlcov
+.nox
+.coverage
+.pytest_cache

@@ -6,6 +6,8 @@
       "source.organizeImports": "explicit"
     }
   },
-  "editor.formatOnSave": true,
+  "[toml]": {
+    "editor.formatOnSave": true
+  },
   "python.analysis.extraPaths": ["bases", "components"]
 }
