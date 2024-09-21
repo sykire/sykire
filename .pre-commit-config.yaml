@@ -12,14 +12,9 @@ repos:
         args: [--branch, main]
   - repo: local
     hooks:
-      - id: ruff-format
-        name: formatting::ruff
-        entry: poetry run ruff format
-        language: system
-        types: [python]
-      - id: ruff
-        name: linting-format::ruff
-        entry: poetry run ruff check
+      - id: nox
+        name: nox
+        entry: uv run nox -s lint autoformat typecheck
         language: system
         types: [python]
   - repo: https://github.com/commitizen-tools/commitizen
