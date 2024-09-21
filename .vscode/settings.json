@@ -6,6 +6,10 @@
       "source.organizeImports": "explicit"
     }
   },
-  "editor.formatOnSave": true,
-  "python.analysis.extraPaths": ["bases", "components"]
+  "[toml]": {
+    "editor.formatOnSave": true
+  },
+  "python.analysis.extraPaths": ["bases", "components"],
+  "python.analysis.enablePytestSupport": true,
+  "python.testing.pytestEnabled": true
 }
